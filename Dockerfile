@@ -1,7 +1,7 @@
 # https://github.com/elastic/kibana-docker
-FROM docker.elastic.co/kibana/kibana-oss:6.5.1
+FROM docker.elastic.co/kibana/kibana:6.5.1
 
 # Add your kibana plugins setup here
 # Example: RUN kibana-plugin install <name|url>
 
-#RUN kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-3/sentinl-v6.2.4.zip
+RUN kibana-plugin install https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.5.1.zip
